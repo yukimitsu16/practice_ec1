@@ -194,6 +194,19 @@ small{
     z-index: 100;
   }
   .sidevar{
+    height:auto;
+    width: 100%;
+  }
+  .sidevar ul{
+    padding: 0;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+  }
+  /* .sidevar{
     height: 100px;
     background-color: #c7e1ca;
   }
@@ -203,7 +216,7 @@ small{
     justify-content: space-around;
     padding-top: 26.5px;
     padding-bottom: 26.5px;
-  }
+  } */
   .sidevar li{
     font-size: 1.5em;
   }
