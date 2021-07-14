@@ -28,7 +28,6 @@ else
 	print ' 様　';
 	print '<a href="member_logout.php">ログアウト</a><br />';
 	print '<a href="shop_history.php">購入履歴</a><br/>';
-	print '<a href="../order/order_download.php">注文ダウンロード</a>';
 }
 ?>
 <p><a href="shop_cartlook.php"><img src="../imag/カート.jpg"　alt="カート"></a><br/></p>
