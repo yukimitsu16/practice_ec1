@@ -1,0 +1,225 @@
+body{
+  width: 1260px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template:
+    "left   header  header" 1fr
+    "left   center  center" 2fr
+    "footer footer  footer" 210px
+    /200px 1fr 1fr;
+    font-family: serif;
+  }
+
+nav{
+  grid-area: left;
+  background-color: #c7e1ca;
+  position: relative;
+}
+.sidevar{
+  width: 200px;
+  position: fixed;
+}
+nav ul{
+  list-style:none;
+  padding-left: 0;
+  line-height: 30px;
+}
+nav ul li:hover{
+  border: 2px solid #034eb3;
+}
+nav ul li a:hover{
+  color: #fff;
+}
+nav ul img{
+  padding-left: 10px;
+}
+nav ul a{
+  text-decoration: none;
+  color: black;
+}
+
+.atama{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+header{
+  grid-area: header;
+  padding: 0;
+  border: 0;
+}
+header img{
+width: 100%;
+height: 100%;
+  object-fit: cover;
+}
+header h1{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 5px 10px #000000;
+  font-size: 4em;
+  color: white;
+}
+
+article{
+  grid-area: center;
+}
+article li a img:hover{
+  opacity: 0.5 ;
+}
+.jamp{
+  padding: 0 8%;
+}
+.jamp img{
+  display: block;
+  margin: 0 auto;
+}
+.jamp ul li{
+  margin-top: 100px;
+  position: relative;
+  list-style: none;
+}
+.jamp ul li h2{
+  /* text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 30%; */
+  position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+.jamp p{
+  position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+.info{
+  padding: 0 8%;
+}
+.info ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.info ul li{
+  position: relative;
+}
+.info ul li h2{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+article h3{
+  text-align: center;
+  margin-top: 150px;
+  height: 150px;
+  font-size: 2em;
+}
+article h3 a {
+  text-decoration: none;
+  color: #000;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 50px 100px;
+}
+footer{
+  grid-area: footer;
+  border-top: 2px solid black;
+}
+.bottom{
+  background-color: #c8bb9b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-top: 0;
+  border-bottom: 2px solid black;
+  margin-bottom: 0;
+  min-height: 100%;
+  
+}
+.bottom ul:not(:first-child){
+  padding-top: 50px;
+  padding-left: 100px;
+  border-left: 2px solid black;
+}
+footer ul li{
+  list-style: none;
+  line-height: 25px;
+}
+footer ul p{
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.nouen p{
+  margin-top: 0;
+}
+small{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:  0 auto;
+  border-bottom: 2px solid black
+}
+
+
+/* 450px以下の場合 */
+@media screen and (max-width:450px){
+  body{
+    grid-template:
+      "left   " 100px
+      "header " 400px
+      "center " 1fr
+      "footer " 200px;
+  }
+  nav{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+  }
+  .sidevar{
+    height: 100px;
+    background-color: #c7e1ca;
+  }
+  .sidevar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+  }
+  .sidevar li{
+    font-size: 1.5em;
+  }
+  header img{
+    width: 100%;
+    height: 100%;
+  }
+  article img{
+    width: 100%;
+  }
+  .info ul{
+    justify-content: center;
+  }
+  .info ul li{
+    width: 100%;
+    height: auto;
+  }
+}
+

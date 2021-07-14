@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    grid-template:
+        "left header header" 50px
+        "left center center" 2fr
+        "footer footer footer" 210px 
+        /200px 1fr 1fr;
+}
+header a{
+    text-decoration: none;
+    color: blue;
+}
+header a:hover{
+    border: 2px solid #034eb3;
+}
+article{
+    margin: 0 auto;
+}
+article a{
+    text-decoration: none;
+    color: blue;
+}
+article a:hover{
+    border: 2px solid #034eb3;
+}
